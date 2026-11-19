@@ -608,20 +608,21 @@ body.dark .ts-body { background: rgba(255,255,255,0.02); }
   /* نوار جستجو */
   .filter-section { flex-direction: column; align-items: stretch; }
     .part-piece {
-    width: 45px !important; 
-    height: 45px !important;
-    font-size: 1.2rem !important; 
+    width: 42px !important; 
+    height: 42px !important;
+    font-size: 1.1rem !important; 
     border-radius: 8px !important;
   }
   
   .car-container {
-    width: 240px !important;
-    height: 240px !important;
+    width: 200px !important;
+    height: 200px !important;
   }
 
   .explode-stage {
-    min-height: 380px !important;
-}
+    min-height: 400px !important; 
+    padding: 10px !important;
+  }
 
 }
 /* استایل هایلایت نمودار */
