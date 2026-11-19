@@ -212,7 +212,7 @@ if (specsContainer) {
     else el.dataset.score = "low";
 
     const angle = Math.atan2(part.y - 50, part.x - 50);
-    const dist = window.innerWidth < 768 ? 75 : 160 ;
+    const dist = window.innerWidth < 768 ? 55 : 160 ;
     el.style.setProperty("--tx", Math.cos(angle) * dist + "px");
     el.style.setProperty("--ty", Math.sin(angle) * dist + "px");
     
