@@ -194,6 +194,12 @@ if (specsContainer) {
       img.style.height = "100%";
       img.style.objectFit = "contain";
       img.style.pointerEvents = "none";
+        img.style.filter = "drop-shadow(0px 8px 12px rgba(0,0,0,0.4))"; 
+  
+  el.style.background = "transparent"; 
+  el.style.border = "none"; 
+  el.style.boxShadow = "none"; 
+  
       el.appendChild(img);
     } else {
       el.textContent = part.icon;
@@ -808,9 +814,29 @@ function openSubParts(mainPart) {
   mainPart.subParts.forEach((subPart, index) => {
     const el = document.createElement("div");
     el.className = "part-piece cursor-wrench";
-    el.textContent = subPart.icon;
-    el.style.display = "flex"; el.style.alignItems = "center"; el.style.justifyContent = "center"; el.style.fontSize = "1.5rem";
-    el.style.background = "var(--surface)"; el.style.border = "2px solid var(--accent)"; 
+if (subPart.image) {
+  const img = document.createElement("img");
+  img.src = subPart.image;
+  img.style.width = "100%";
+  img.style.height = "100%";
+  img.style.objectFit = "contain";
+  img.style.pointerEvents = "none"; 
+  img.style.filter = "drop-shadow(0px 8px 12px rgba(0,0,0,0.4))";
+  
+  el.style.background = "transparent";
+  el.style.border = "none";
+  el.style.boxShadow = "none";
+  
+  el.appendChild(img);
+} else {
+  el.textContent = subPart.icon;
+  el.style.display = "flex"; 
+  el.style.alignItems = "center"; 
+  el.style.justifyContent = "center"; 
+  el.style.fontSize = "1.5rem";
+  el.style.background = "var(--surface)"; 
+  el.style.border = "2px solid var(--accent)"; 
+}
     
     const angle = (index / mainPart.subParts.length) * (2 * Math.PI);
     const dist = 120;
