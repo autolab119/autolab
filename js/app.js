@@ -596,6 +596,7 @@ if (gameBtn) {
       gameSection.style.display = "block";
       if (!state.currentCar) openCar(CARS[0].id);
       startNewGame();
+      window.scrollto({ top: 0, behavior: "smooth" });
     } else {
       gameSection.style.display = "none";
       gameActive = false;
