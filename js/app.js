@@ -817,6 +817,7 @@ function openSubParts(mainPart) {
 if (subPart.image) {
   const img = document.createElement("img");
   img.src = subPart.image;
+  img.loading = "lazy";
   img.style.width = "100%";
   img.style.height = "100%";
   img.style.objectFit = "contain";
