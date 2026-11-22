@@ -26,16 +26,16 @@ const CARS = [
         "خرابی کویل‌ها (بابین) که باعث قطع شدن یک سیلندر و لرزش شدید موتور می‌گردد"
       ], 
       score: 7 , subParts: [
-  { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "حرکت خطی در سیلندر ایجاد کرده و نیروی انفجار سوخت را به میل‌لنگ منتقل می‌کند.", issues: ["سایش رینگ‌ها و روغن‌سوزی", "شکستگی پیستون در اثر احتراق زودرس"], score: 6 },
-  { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "حرکت رفت و برگشتی پیستون‌ها را به حرکت دورانی تبدیل می‌کند.", issues: ["فرسودگی یاتاقان‌ها", "تاب برداشتن در اثر داغ شدن"], score: 7 },
-  { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "محل قرارگیری سوپاپ‌ها و شمع‌ها. محفظه احتراق را می‌بندد.", issues: ["ترک خوردگی در اثر جوش آوردن", "تاب برداشتن سطح"], score: 7 },
-  { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "آب‌بندی بین بلوک سیلندر و سرسیلندر برای جلوگیری از نشتی آب و روغن.", issues: ["سوختن و ترکیب آب و روغن", "نشتی کمپرسور به خارج"], score: 5 },
-  { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "ورود هوا و خروج دود را در زمان‌بندی دقیق کنترل می‌کنند.", issues: ["صدای تایپت (تنظیم نبودن)", "سوختن سوپاپ دود"], score: 6 },
-  { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "با چرخش خود، سوپاپ‌ها را در زمان درست باز و بسته می‌کند.", issues: ["سایش بادامک‌ها", "خرابی تسمه تایم"], score: 7 },
-  { id: "conrod", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ برای انتقال نیرو.", issues: ["شکستگی در اثر ضربه (کوبیدن موتور)"], score: 8 },
-  { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "ذخیره انرژی دورانی و ایجاد حرکت یکنواخت.", issues: ["سایش دنده‌های استارت", "ترک خوردگی"], score: 7 },
-  { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "به گردش درآوردن مایع خنک‌کننده در موتور.", issues: ["نشتی آب از کاسه‌نمد", "خرابی بلبرینگ و صدا"], score: 6 },
-  { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "پمپاژ روغن به تمام نقاط موتور برای روانکاری.", issues: ["افت فشار روغن", "گرفتگی صافی روغن"], score: 7 }
+  { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "حرکت خطی در سیلندر ایجاد کرده و نیروی انفجار سوخت را به میل‌لنگ منتقل می‌کند.", issues: ["سایش رینگ‌ها و روغن‌سوزی", "شکستگی پیستون در اثر احتراق زودرس"], score: 6 },
+  { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "حرکت رفت و برگشتی پیستون‌ها را به حرکت دورانی تبدیل می‌کند.", issues: ["فرسودگی یاتاقان‌ها", "تاب برداشتن در اثر داغ شدن"], score: 7 },
+  { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "محل قرارگیری سوپاپ‌ها و شمع‌ها. محفظه احتراق را می‌بندد.", issues: ["ترک خوردگی در اثر جوش آوردن", "تاب برداشتن سطح"], score: 7 },
+  { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "آب‌بندی بین بلوک سیلندر و سرسیلندر برای جلوگیری از نشتی آب و روغن.", issues: ["سوختن و ترکیب آب و روغن", "نشتی کمپرسور به خارج"], score: 5 },
+  { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "ورود هوا و خروج دود را در زمان‌بندی دقیق کنترل می‌کنند.", issues: ["صدای تایپت (تنظیم نبودن)", "سوختن سوپاپ دود"], score: 6 },
+  { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "با چرخش خود، سوپاپ‌ها را در زمان درست باز و بسته می‌کند.", issues: ["سایش بادامک‌ها", "خرابی تسمه تایم"], score: 7 },
+  { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ برای انتقال نیرو.", issues: ["شکستگی در اثر ضربه (کوبیدن موتور)"], score: 8 },
+  { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "ذخیره انرژی دورانی و ایجاد حرکت یکنواخت.", issues: ["سایش دنده‌های استارت", "ترک خوردگی"], score: 7 },
+  { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "به گردش درآوردن مایع خنک‌کننده در موتور.", issues: ["نشتی آب از کاسه‌نمد", "خرابی بلبرینگ و صدا"], score: 6 },
+  { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "پمپاژ روغن به تمام نقاط موتور برای روانکاری.", issues: ["افت فشار روغن", "گرفتگی صافی روغن"], score: 7 }
 ]
     },
     { 
@@ -49,12 +49,12 @@ const CARS = [
         "نشتی روغن از کاسه‌نمدهای پلوس که نیاز به تعویض منظم دارد"
       ], 
       score: 5 ,subParts: [
-  { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "جفت‌شدن دنده‌ها برای تغییر نسبت دور و گشتاور.", issues: ["سایش دندانه‌ها", "خِرخِر دادن هنگام تعویض"], score: 6 },
-  { id: "synchro", name: "سینکرو", icon: "🔄", desc: "هم‌سرعت کردن چرخ‌دنده‌ها قبل از درگیر شدن برای تعویض نرم.", issues: ["سایش حلقه‌های سینکرو", "سختی جا رفتن دنده"], score: 5 },
-  { id: "shift_forks", name: "مکانیزم تعویض دنده", icon: "🕹️", desc: "میله‌ها و چنگال‌هایی که حرکت دسته دنده را به داخل گیربکس منتقل می‌کنند.", issues: ["لقی بیش از حد دسته دنده", "گیرپاژ کردن"], score: 6 },
-  { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕", desc: "کاهش اصطکاک و نگهداری شافت‌های چرخان.", issues: ["زوزه کشیدن گیربکس", "خرابی و شکستگی"], score: 7 },
-  { id: "input_shaft", name: "شافت ورودی (کلاچ)", icon: "➖", desc: "دریافت قدرت از کلاچ و انتقال به داخل گیربکس.", issues: ["سایش دنده شافت", "نشتی کاسه‌نمد"], score: 7 },
-  { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "توزیع قدرت بین چرخ‌های محرک هنگام دور زدن.", issues: ["صدای زوزه دیفرانسیل", "نشتی روغن"], score: 6 }
+  { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "جفت‌شدن دنده‌ها برای تغییر نسبت دور و گشتاور.", issues: ["سایش دندانه‌ها", "خِرخِر دادن هنگام تعویض"], score: 6 },
+  { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "هم‌سرعت کردن چرخ‌دنده‌ها قبل از درگیر شدن برای تعویض نرم.", issues: ["سایش حلقه‌های سینکرو", "سختی جا رفتن دنده"], score: 5 },
+  { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض دنده", icon: "🕹️", desc: "میله‌ها و چنگال‌هایی که حرکت دسته دنده را به داخل گیربکس منتقل می‌کنند.", issues: ["لقی بیش از حد دسته دنده", "گیرپاژ کردن"], score: 6 },
+  { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕", desc: "کاهش اصطکاک و نگهداری شافت‌های چرخان.", issues: ["زوزه کشیدن گیربکس", "خرابی و شکستگی"], score: 7 },
+  { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی (کلاچ)", icon: "➖", desc: "دریافت قدرت از کلاچ و انتقال به داخل گیربکس.", issues: ["سایش دنده شافت", "نشتی کاسه‌نمد"], score: 7 },
+  { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "توزیع قدرت بین چرخ‌های محرک هنگام دور زدن.", issues: ["صدای زوزه دیفرانسیل", "نشتی روغن"], score: 6 }
 ]
     },
     { 
@@ -241,16 +241,16 @@ const CARS = [
       ], 
        score: 5,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سبک آلومینیومی موتور ۱.۳ لیتری.", issues: ["روغن‌سوزی شدید در کیلومتر بالا", "شکستگی رینگ"], score: 5 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ چدنی مقاوم.", issues: ["سایش یاتاقان ثابت", "کوبیدن موتور"], score: 5 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ آلومینیومی.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 5 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر (نقطه ضعف اصلی پراید).", issues: ["سوختن سریع", "ترکیب آب و روغن"], score: 4 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت", "سوختن سوپاپ"], score: 5 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ و تسمه تایم.", issues: ["پاره شدن تسمه تایم", "تنظیم نبودن"], score: 5 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر کوبیدن"], score: 5 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار و دنده استارت.", issues: ["سایش دنده استارت"], score: 6 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب خنک‌کننده.", issues: ["نشتی آب", "صدا دادن"], score: 5 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 5 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سبک آلومینیومی موتور ۱.۳ لیتری.", issues: ["روغن‌سوزی شدید در کیلومتر بالا", "شکستگی رینگ"], score: 5 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ چدنی مقاوم.", issues: ["سایش یاتاقان ثابت", "کوبیدن موتور"], score: 5 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ آلومینیومی.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 5 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر (نقطه ضعف اصلی پراید).", issues: ["سوختن سریع", "ترکیب آب و روغن"], score: 4 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت", "سوختن سوپاپ"], score: 5 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ و تسمه تایم.", issues: ["پاره شدن تسمه تایم", "تنظیم نبودن"], score: 5 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر کوبیدن"], score: 5 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار و دنده استارت.", issues: ["سایش دنده استارت"], score: 6 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب خنک‌کننده.", issues: ["نشتی آب", "صدا دادن"], score: 5 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 5 }
   ]
 },
     { 
@@ -265,12 +265,12 @@ const CARS = [
       ], 
       score: 5,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های گیربکس پراید.", issues: ["سایش دنده‌ها", "صدا"], score: 5 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی جا رفتن دنده ۲"], score: 4 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم سیمی تعویض دنده.", issues: ["لقی زیاد دسته دنده", "پاره شدن سیم"], score: 5 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های گیربکس.", issues: ["زوزه کشیدن"], score: 5 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی گیربکس.", issues: ["نشتی روغن"], score: 5 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل گیربکس.", issues: ["نشتی روغن"], score: 5 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های گیربکس پراید.", issues: ["سایش دنده‌ها", "صدا"], score: 5 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی جا رفتن دنده ۲"], score: 4 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم سیمی تعویض دنده.", issues: ["لقی زیاد دسته دنده", "پاره شدن سیم"], score: 5 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های گیربکس.", issues: ["زوزه کشیدن"], score: 5 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی گیربکس.", issues: ["نشتی روغن"], score: 5 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل گیربکس.", issues: ["نشتی روغن"], score: 5 }
   ]
 },
     { 
@@ -459,16 +459,16 @@ const CARS = [
       ], 
        score: 6,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های موتور EF7 برای تحمل فشار بالای احتراق طراحی شده‌اند.", issues: ["روغن‌سوزی در کیلومتر بالا", "سایش رینگ‌ها"], score: 6 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی که حرکت خطی پیستون‌ها را به دورانی تبدیل می‌کند.", issues: ["فرسودگی یاتاقان‌ها", "لرزش موتور"], score: 6 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ EF7 که محفظه احتراق را تشکیل می‌دهد.", issues: ["ترک خوردگی در اثر جوش", "تاب برداشتن"], score: 6 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر چند لایه فلزی برای آب‌بندی کامل موتور.", issues: ["سوختن واشر", "نشتی آب به سیلندر"], score: 5 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی برای تبادل گازها.", issues: ["صدای تایپت", "سوختن سوپاپ دود"], score: 6 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ به همراه تسمه تایم، زمان‌بندی باز و بسته شدن سوپاپ‌ها را کنترل می‌کند.", issues: ["پاره شدن تسمه تایم", "سایش بادامک"], score: 6 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر ضربه"], score: 7 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار برای یکنواخت کردن دور موتور.", issues: ["سایش دنده استارت", "ترک خوردگی"], score: 7 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "گردش مایع خنک‌کننده در بلوک سیلندر.", issues: ["نشتی آب", "خرابی بلبرینگ"], score: 6 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "تأمین فشار روغن برای روانکاری قطعات متحرک.", issues: ["افت فشار روغن", "گرفتگی صافی"], score: 6 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های موتور EF7 برای تحمل فشار بالای احتراق طراحی شده‌اند.", issues: ["روغن‌سوزی در کیلومتر بالا", "سایش رینگ‌ها"], score: 6 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی که حرکت خطی پیستون‌ها را به دورانی تبدیل می‌کند.", issues: ["فرسودگی یاتاقان‌ها", "لرزش موتور"], score: 6 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ EF7 که محفظه احتراق را تشکیل می‌دهد.", issues: ["ترک خوردگی در اثر جوش", "تاب برداشتن"], score: 6 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر چند لایه فلزی برای آب‌بندی کامل موتور.", issues: ["سوختن واشر", "نشتی آب به سیلندر"], score: 5 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی برای تبادل گازها.", issues: ["صدای تایپت", "سوختن سوپاپ دود"], score: 6 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ به همراه تسمه تایم، زمان‌بندی باز و بسته شدن سوپاپ‌ها را کنترل می‌کند.", issues: ["پاره شدن تسمه تایم", "سایش بادامک"], score: 6 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر ضربه"], score: 7 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار برای یکنواخت کردن دور موتور.", issues: ["سایش دنده استارت", "ترک خوردگی"], score: 7 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "گردش مایع خنک‌کننده در بلوک سیلندر.", issues: ["نشتی آب", "خرابی بلبرینگ"], score: 6 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "تأمین فشار روغن برای روانکاری قطعات متحرک.", issues: ["افت فشار روغن", "گرفتگی صافی"], score: 6 }
   ]
 },
     { 
@@ -483,12 +483,12 @@ const CARS = [
       ], 
         score: 6,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی گیربکس JC.", issues: ["سایش دنده‌ها", "خِرخِر"], score: 6 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده سرعت دنده‌ها.", issues: ["سختی تعویض دنده", "سایش سینکرو"], score: 5 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "اهرم‌ها و میله‌های انتقال حرکت دسته دنده.", issues: ["لقی دسته دنده"], score: 6 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های شافت اصلی و کمکی.", issues: ["صدای زوزه", "خرابی زودهنگام"], score: 6 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت متصل به کلاچ.", issues: ["نشتی کاسه‌نمد"], score: 6 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "توزیع گشتاور بین چرخ‌های جلو.", issues: ["نشتی روغن", "صدای غیرعادی"], score: 6 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی گیربکس JC.", issues: ["سایش دنده‌ها", "خِرخِر"], score: 6 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده سرعت دنده‌ها.", issues: ["سختی تعویض دنده", "سایش سینکرو"], score: 5 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "اهرم‌ها و میله‌های انتقال حرکت دسته دنده.", issues: ["لقی دسته دنده"], score: 6 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های شافت اصلی و کمکی.", issues: ["صدای زوزه", "خرابی زودهنگام"], score: 6 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت متصل به کلاچ.", issues: ["نشتی کاسه‌نمد"], score: 6 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "توزیع گشتاور بین چرخ‌های جلو.", issues: ["نشتی روغن", "صدای غیرعادی"], score: 6 }
   ]
 },
     { 
@@ -676,16 +676,16 @@ const CARS = [
       ], 
        score: 7,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سبک آلومینیومی با طراحی بهینه برای کاهش اصطکاک.", issues: ["سایش رینگ‌ها در کیلومتر بالا", "روغن‌سوزی"], score: 7 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی آهنگری شده برای تحمل دورهای بالا.", issues: ["فرسودگی یاتاقان‌ها", "لرزش در دورهای بالا"], score: 7 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ آلومینیومی.", issues: ["ترک خوردگی در اثر جوش آوردن", "تاب برداشتن سطح"], score: 7 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر چند لایه فلزی (MLS) برای آب‌بندی بهتر.", issues: ["سوختن واشر", "نشتی آب به سیلندر"], score: 6 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "۱۶ سوپاپ برای ورود و خروج بهتر گازها.", issues: ["صدای تایپت", "سوختن سوپاپ دود"], score: 7 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "دو میل‌سوپاپ (DOHC) برای دقت بالای زمان‌بندی.", issues: ["سایش بادامک", "خرابی تسمه تایم"], score: 7 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر ضربه"], score: 8 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار سبک برای واکنش سریع‌تر موتور.", issues: ["سایش دنده استارت"], score: 7 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب با راندمان بالا.", issues: ["نشتی آب", "خرابی بلبرینگ"], score: 7 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "تأمین فشار روغن.", issues: ["افت فشار روغن", "گرفتگی صافی"], score: 7 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سبک آلومینیومی با طراحی بهینه برای کاهش اصطکاک.", issues: ["سایش رینگ‌ها در کیلومتر بالا", "روغن‌سوزی"], score: 7 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی آهنگری شده برای تحمل دورهای بالا.", issues: ["فرسودگی یاتاقان‌ها", "لرزش در دورهای بالا"], score: 7 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ آلومینیومی.", issues: ["ترک خوردگی در اثر جوش آوردن", "تاب برداشتن سطح"], score: 7 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر چند لایه فلزی (MLS) برای آب‌بندی بهتر.", issues: ["سوختن واشر", "نشتی آب به سیلندر"], score: 6 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "۱۶ سوپاپ برای ورود و خروج بهتر گازها.", issues: ["صدای تایپت", "سوختن سوپاپ دود"], score: 7 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "دو میل‌سوپاپ (DOHC) برای دقت بالای زمان‌بندی.", issues: ["سایش بادامک", "خرابی تسمه تایم"], score: 7 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر ضربه"], score: 8 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار سبک برای واکنش سریع‌تر موتور.", issues: ["سایش دنده استارت"], score: 7 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب با راندمان بالا.", issues: ["نشتی آب", "خرابی بلبرینگ"], score: 7 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "تأمین فشار روغن.", issues: ["افت فشار روغن", "گرفتگی صافی"], score: 7 }
   ]
 },
     { 
@@ -701,12 +701,12 @@ const CARS = [
       ], 
        score: 6,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی گیربکس BE4.", issues: ["سایش دنده‌ها", "خِرخِر"], score: 6 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده سرعت دنده‌ها.", issues: ["سختی تعویض دنده", "سایش سینکرو"], score: 6 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "اهرم‌ها و میله‌های انتقال حرکت دسته دنده.", issues: ["لقی دسته دنده"], score: 6 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های شافت اصلی و کمکی.", issues: ["صدای زوزه", "خرابی زودهنگام"], score: 6 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت متصل به کلاچ.", issues: ["نشتی کاسه‌نمد"], score: 7 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "توزیع گشتاور بین چرخ‌های جلو.", issues: ["نشتی روغن", "صدای غیرعادی"], score: 7 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی گیربکس BE4.", issues: ["سایش دنده‌ها", "خِرخِر"], score: 6 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده سرعت دنده‌ها.", issues: ["سختی تعویض دنده", "سایش سینکرو"], score: 6 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "اهرم‌ها و میله‌های انتقال حرکت دسته دنده.", issues: ["لقی دسته دنده"], score: 6 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های شافت اصلی و کمکی.", issues: ["صدای زوزه", "خرابی زودهنگام"], score: 6 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت متصل به کلاچ.", issues: ["نشتی کاسه‌نمد"], score: 7 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "توزیع گشتاور بین چرخ‌های جلو.", issues: ["نشتی روغن", "صدای غیرعادی"], score: 7 }
   ]
 },
     { 
@@ -894,16 +894,16 @@ const CARS = [
       ], 
       score: 6,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سنگین‌تر نسبت به موتورهای جدید.", issues: ["روغن‌سوزی شدید در کیلومتر بالا", "سایش رینگ‌ها"], score: 6 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ چدنی سنگین و مقاوم.", issues: ["سایش یاتاقان ثابت", "کوبیدن موتور"], score: 6 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی در اثر جوش", "تاب برداشتن"], score: 5 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر (نقطه ضعف معروف XU7).", issues: ["سوختن واشر", "نشتی آب به سیلندر"], score: 5 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت", "سوختن سوپاپ"], score: 6 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ و تسمه تایم.", issues: ["پاره شدن تسمه تایم", "تنظیم نبودن"], score: 6 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر کوبیدن"], score: 6 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار و دنده استارت.", issues: ["سایش دنده استارت"], score: 7 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب خنک‌کننده.", issues: ["نشتی آب", "صدا دادن"], score: 5 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 6 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سنگین‌تر نسبت به موتورهای جدید.", issues: ["روغن‌سوزی شدید در کیلومتر بالا", "سایش رینگ‌ها"], score: 6 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ چدنی سنگین و مقاوم.", issues: ["سایش یاتاقان ثابت", "کوبیدن موتور"], score: 6 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی در اثر جوش", "تاب برداشتن"], score: 5 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر (نقطه ضعف معروف XU7).", issues: ["سوختن واشر", "نشتی آب به سیلندر"], score: 5 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت", "سوختن سوپاپ"], score: 6 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ و تسمه تایم.", issues: ["پاره شدن تسمه تایم", "تنظیم نبودن"], score: 6 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر کوبیدن"], score: 6 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار و دنده استارت.", issues: ["سایش دنده استارت"], score: 7 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب خنک‌کننده.", issues: ["نشتی آب", "صدا دادن"], score: 5 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 6 }
   ]
 },
     { 
@@ -919,12 +919,12 @@ const CARS = [
       ], 
        score: 6,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی گیربکس BE3.", issues: ["سایش دنده‌ها", "خِرخِر"], score: 6 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده سرعت دنده‌ها.", issues: ["سختی تعویض دنده", "سایش سینکرو"], score: 5 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "اهرم‌ها و میله‌های انتقال حرکت دسته دنده.", issues: ["لقی دسته دنده"], score: 6 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های شافت اصلی و کمکی.", issues: ["صدای زوزه", "خرابی زودهنگام"], score: 6 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت متصل به کلاچ.", issues: ["نشتی کاسه‌نمد"], score: 6 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "توزیع گشتاور بین چرخ‌های جلو.", issues: ["نشتی روغن", "صدای غیرعادی"], score: 6 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی گیربکس BE3.", issues: ["سایش دنده‌ها", "خِرخِر"], score: 6 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده سرعت دنده‌ها.", issues: ["سختی تعویض دنده", "سایش سینکرو"], score: 5 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "اهرم‌ها و میله‌های انتقال حرکت دسته دنده.", issues: ["لقی دسته دنده"], score: 6 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های شافت اصلی و کمکی.", issues: ["صدای زوزه", "خرابی زودهنگام"], score: 6 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت متصل به کلاچ.", issues: ["نشتی کاسه‌نمد"], score: 6 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "توزیع گشتاور بین چرخ‌های جلو.", issues: ["نشتی روغن", "صدای غیرعادی"], score: 6 }
   ]
 },
     { 
@@ -1122,15 +1122,15 @@ const CARS = [
       ], 
       score: 7,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آهنگری شده برای تحمل فشار توربو.", issues: ["روغن‌سوزی در نمونه‌های اولیه", "سایش رینگ"], score: 6 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ تقویت‌شده برای گشتاور بالاتر.", issues: ["فرسودگی یاتاقان‌ها", "لرزش"], score: 7 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ آلومینیومی.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 6 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر MLS مقاوم در برابر فشار و حرارت.", issues: ["نشتی آب", "سوختن در اثر جوش"], score: 6 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "۱۶ سوپاپ برای تنفس بهتر موتور.", issues: ["صدای تایپت", "سوختن سوپاپ"], score: 7 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "دو میل‌سوپاپ (DOHC).", issues: ["سایش بادامک", "پاره شدن تسمه"], score: 7 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "شاتون‌های تقویت‌شده.", issues: ["شکستگی در اثر ضربه شدید"], score: 7 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "فلایویل دوجرمه برای کاهش لرزش.", issues: ["سایش دنده استارت"], score: 7 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب با راندمان بالا برای خنک‌کاری توربو.", issues: ["نشتی آب", "خرابی بلبرینگ"], score: 6 },
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آهنگری شده برای تحمل فشار توربو.", issues: ["روغن‌سوزی در نمونه‌های اولیه", "سایش رینگ"], score: 6 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ تقویت‌شده برای گشتاور بالاتر.", issues: ["فرسودگی یاتاقان‌ها", "لرزش"], score: 7 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ آلومینیومی.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 6 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر MLS مقاوم در برابر فشار و حرارت.", issues: ["نشتی آب", "سوختن در اثر جوش"], score: 6 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "۱۶ سوپاپ برای تنفس بهتر موتور.", issues: ["صدای تایپت", "سوختن سوپاپ"], score: 7 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "دو میل‌سوپاپ (DOHC).", issues: ["سایش بادامک", "پاره شدن تسمه"], score: 7 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "شاتون‌های تقویت‌شده.", issues: ["شکستگی در اثر ضربه شدید"], score: 7 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "فلایویل دوجرمه برای کاهش لرزش.", issues: ["سایش دنده استارت"], score: 7 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب با راندمان بالا برای خنک‌کاری توربو.", issues: ["نشتی آب", "خرابی بلبرینگ"], score: 6 },
     { id: "turbo", name: "توربوشارژر", icon: "🌀", desc: "پرخوران گازهای خروجی برای افزایش قدرت.", issues: ["تأخیر توربو (Turbo Lag)", "خرابی وِیس‌گیت", "روغن‌سوزی توربو"], score: 6 }
   ]
 },
@@ -1147,12 +1147,12 @@ const CARS = [
       ], 
       score: 6,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های تقویت‌شده برای گشتاور بالا.", issues: ["سایش دنده‌ها", "صدا"], score: 6 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده.", issues: ["سختی تعویض دنده"], score: 6 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض دنده.", issues: ["لقی دسته دنده"], score: 6 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های مقاوم.", issues: ["صدای زوزه"], score: 6 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی گیربکس.", issues: ["نشتی روغن"], score: 7 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل گیربکس.", issues: ["نشتی روغن", "صدا"], score: 6 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های تقویت‌شده برای گشتاور بالا.", issues: ["سایش دنده‌ها", "صدا"], score: 6 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده.", issues: ["سختی تعویض دنده"], score: 6 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض دنده.", issues: ["لقی دسته دنده"], score: 6 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های مقاوم.", issues: ["صدای زوزه"], score: 6 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی گیربکس.", issues: ["نشتی روغن"], score: 7 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل گیربکس.", issues: ["نشتی روغن", "صدا"], score: 6 }
   ]
 },
     { 
@@ -1352,16 +1352,16 @@ const CARS = [
       ], 
      score: 6,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آلومینیومی سبک.", issues: ["سایش رینگ", "روغن‌سوزی در کیلومتر بالا"], score: 6 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی.", issues: ["سایش یاتاقان", "لرزش"], score: 6 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 5 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر استاندارد.", issues: ["سوختن واشر", "نشتی"], score: 5 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت"], score: 6 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ (SOHC).", issues: ["سایش بادامک", "خرابی تسمه"], score: 6 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "شاتون‌های فولادی.", issues: ["شکستگی در اثر ضربه"], score: 6 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "فلایویل استاندارد.", issues: ["سایش دنده استارت"], score: 6 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب خنک‌کننده.", issues: ["نشتی آب", "صدا دادن"], score: 5 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 6 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آلومینیومی سبک.", issues: ["سایش رینگ", "روغن‌سوزی در کیلومتر بالا"], score: 6 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی.", issues: ["سایش یاتاقان", "لرزش"], score: 6 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 5 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر استاندارد.", issues: ["سوختن واشر", "نشتی"], score: 5 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت"], score: 6 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ (SOHC).", issues: ["سایش بادامک", "خرابی تسمه"], score: 6 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "شاتون‌های فولادی.", issues: ["شکستگی در اثر ضربه"], score: 6 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "فلایویل استاندارد.", issues: ["سایش دنده استارت"], score: 6 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب خنک‌کننده.", issues: ["نشتی آب", "صدا دادن"], score: 5 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 6 }
   ]
 },
     { 
@@ -1376,13 +1376,13 @@ const CARS = [
       ], 
        score: 5,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های گیربکس S5.", issues: ["سایش دنده‌ها", "لقی"], score: 5 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی تعویض دنده ۲"], score: 5 },
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های گیربکس S5.", issues: ["سایش دنده‌ها", "لقی"], score: 5 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی تعویض دنده ۲"], score: 5 },
     { id: "actuator", name: "اکچویتور (AMT)", icon: "🤖", desc: "موتورهای الکتریکی تعویض دنده در نسخه AMT.", issues: ["گیرپاژ کردن", "تأخیر در تعویض دنده"], score: 4 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض دنده.", issues: ["لقی دسته دنده"], score: 5 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های گیربکس.", issues: ["صدای زوزه"], score: 6 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی گیربکس.", issues: ["نشتی روغن"], score: 6 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل گیربکس.", issues: ["نشتی روغن"], score: 6 }
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض دنده.", issues: ["لقی دسته دنده"], score: 5 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های گیربکس.", issues: ["صدای زوزه"], score: 6 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی گیربکس.", issues: ["نشتی روغن"], score: 6 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل گیربکس.", issues: ["نشتی روغن"], score: 6 }
   ]
 },
     { 
@@ -1572,16 +1572,16 @@ const CARS = [
       ], 
        score: 5,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آلومینیومی سبک.", issues: ["سایش رینگ", "روغن‌سوزی"], score: 5 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی.", issues: ["فرسودگی یاتاقان‌ها", "لرزش"], score: 5 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ آلومینیومی.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 5 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر استاندارد.", issues: ["سوختن واشر", "نشتی آب"], score: 4 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت", "سوختن سوپاپ"], score: 5 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ (SOHC).", issues: ["سایش بادامک", "خرابی تسمه تایم"], score: 5 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر ضربه"], score: 6 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار و دنده استارت.", issues: ["سایش دنده استارت"], score: 6 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب خنک‌کننده.", issues: ["نشتی آب", "صدا دادن"], score: 5 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 5 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آلومینیومی سبک.", issues: ["سایش رینگ", "روغن‌سوزی"], score: 5 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی.", issues: ["فرسودگی یاتاقان‌ها", "لرزش"], score: 5 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ آلومینیومی.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 5 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر استاندارد.", issues: ["سوختن واشر", "نشتی آب"], score: 4 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت", "سوختن سوپاپ"], score: 5 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ (SOHC).", issues: ["سایش بادامک", "خرابی تسمه تایم"], score: 5 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر ضربه"], score: 6 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار و دنده استارت.", issues: ["سایش دنده استارت"], score: 6 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب خنک‌کننده.", issues: ["نشتی آب", "صدا دادن"], score: 5 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 5 }
   ]
 },
     { 
@@ -1597,12 +1597,12 @@ const CARS = [
       ], 
        score: 5,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی.", issues: ["سایش دنده‌ها", "خِرخِر"], score: 5 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده.", issues: ["سختی تعویض دنده ۲"], score: 5 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "اهرم‌ها و میله‌های انتقال حرکت دسته دنده.", issues: ["لقی دسته دنده"], score: 5 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های شافت اصلی.", issues: ["صدای زوزه"], score: 5 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت متصل به کلاچ.", issues: ["نشتی روغن"], score: 5 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "توزیع گشتاور.", issues: ["نشتی روغن"], score: 5 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی.", issues: ["سایش دنده‌ها", "خِرخِر"], score: 5 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده.", issues: ["سختی تعویض دنده ۲"], score: 5 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "اهرم‌ها و میله‌های انتقال حرکت دسته دنده.", issues: ["لقی دسته دنده"], score: 5 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌های شافت اصلی.", issues: ["صدای زوزه"], score: 5 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت متصل به کلاچ.", issues: ["نشتی روغن"], score: 5 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "توزیع گشتاور.", issues: ["نشتی روغن"], score: 5 }
   ]
 },
     { 
@@ -1792,16 +1792,16 @@ const CARS = [
       ], 
        score: 5,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آلومینیومی.", issues: ["سایش رینگ", "روغن‌سوزی"], score: 5 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی.", issues: ["فرسودگی یاتاقان", "لرزش"], score: 5 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 5 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر استاندارد.", issues: ["سوختن واشر", "نشتی"], score: 4 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت"], score: 5 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ.", issues: ["سایش بادامک", "پاره شدن تسمه"], score: 5 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی"], score: 5 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار.", issues: ["سایش دنده استارت"], score: 5 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی آب", "صدا"], score: 5 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 5 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آلومینیومی.", issues: ["سایش رینگ", "روغن‌سوزی"], score: 5 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی.", issues: ["فرسودگی یاتاقان", "لرزش"], score: 5 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 5 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر استاندارد.", issues: ["سوختن واشر", "نشتی"], score: 4 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت"], score: 5 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ.", issues: ["سایش بادامک", "پاره شدن تسمه"], score: 5 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی"], score: 5 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار.", issues: ["سایش دنده استارت"], score: 5 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی آب", "صدا"], score: 5 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 5 }
   ]
 },
     { 
@@ -1817,12 +1817,12 @@ const CARS = [
       ], 
        score: 5,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی.", issues: ["سایش دنده", "خِرخِر"], score: 5 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی دنده ۲"], score: 4 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض دنده.", issues: ["لقی دسته دنده"], score: 5 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدای زوزه"], score: 5 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 5 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 5 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی.", issues: ["سایش دنده", "خِرخِر"], score: 5 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی دنده ۲"], score: 4 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض دنده.", issues: ["لقی دسته دنده"], score: 5 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدای زوزه"], score: 5 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 5 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 5 }
   ]
 },
     { 
@@ -2020,16 +2020,16 @@ const CARS = [
       ], 
        score: 6,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های بهینه‌شده برای کاهش اصطکاک در موتور EF7 پلاس.", issues: ["سایش رینگ‌ها", "روغن‌سوزی در کیلومتر بالا"], score: 6 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی ۸ کانال برای روغن‌کاری بهتر.", issues: ["فرسودگی یاتاقان‌ها", "لرزش موتور"], score: 7 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ با محفظه احتراق بهینه.", issues: ["ترک خوردگی در اثر جوش", "تاب برداشتن"], score: 6 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر MLS چند لایه فلزی.", issues: ["نشتی آب", "سوختن واشر در اثر داغ کردن"], score: 6 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "۱۶ سوپاپ برای تنفس بهتر موتور.", issues: ["صدای تایپت", "سوختن سوپاپ دود"], score: 6 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "دو میل‌سوپاپ (DOHC) و سیستم زمان‌بندی متغیر سوپاپ (VVT).", issues: ["خرابی سنسور فاز", "سایش بادامک"], score: 6 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "شاتون‌های فولادی آهنگری شده.", issues: ["شکستگی در اثر کوبیدن موتور"], score: 7 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار دوجرمه (Dual-mass) برای کاهش لرزش.", issues: ["خرابی فنرهای داخلی", "سایش دنده استارت"], score: 6 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب با راندمان بالا.", issues: ["نشتی آب از کاسه‌نمد", "خرابی بلبرینگ"], score: 6 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن با فشار بهینه.", issues: ["افت فشار روغن", "گرفتگی صافی"], score: 6 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های بهینه‌شده برای کاهش اصطکاک در موتور EF7 پلاس.", issues: ["سایش رینگ‌ها", "روغن‌سوزی در کیلومتر بالا"], score: 6 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی ۸ کانال برای روغن‌کاری بهتر.", issues: ["فرسودگی یاتاقان‌ها", "لرزش موتور"], score: 7 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ با محفظه احتراق بهینه.", issues: ["ترک خوردگی در اثر جوش", "تاب برداشتن"], score: 6 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر MLS چند لایه فلزی.", issues: ["نشتی آب", "سوختن واشر در اثر داغ کردن"], score: 6 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "۱۶ سوپاپ برای تنفس بهتر موتور.", issues: ["صدای تایپت", "سوختن سوپاپ دود"], score: 6 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "دو میل‌سوپاپ (DOHC) و سیستم زمان‌بندی متغیر سوپاپ (VVT).", issues: ["خرابی سنسور فاز", "سایش بادامک"], score: 6 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "شاتون‌های فولادی آهنگری شده.", issues: ["شکستگی در اثر کوبیدن موتور"], score: 7 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار دوجرمه (Dual-mass) برای کاهش لرزش.", issues: ["خرابی فنرهای داخلی", "سایش دنده استارت"], score: 6 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب با راندمان بالا.", issues: ["نشتی آب از کاسه‌نمد", "خرابی بلبرینگ"], score: 6 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن با فشار بهینه.", issues: ["افت فشار روغن", "گرفتگی صافی"], score: 6 }
   ]
 },
     { 
@@ -2045,13 +2045,13 @@ const CARS = [
       ], 
        score: 7,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "مجموعه چرخ‌دنده‌های سیاره‌ای (در اتوماتیک) یا کشویی (در دستی).", issues: ["سایش دنده‌ها", "تأخیر در تعویض"], score: 7 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده (در نسخه دستی).", issues: ["سختی جا رفتن دنده"], score: 6 },
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "مجموعه چرخ‌دنده‌های سیاره‌ای (در اتوماتیک) یا کشویی (در دستی).", issues: ["سایش دنده‌ها", "تأخیر در تعویض"], score: 7 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های هم‌سنگ‌کننده (در نسخه دستی).", issues: ["سختی جا رفتن دنده"], score: 6 },
     { id: "valve_body", name: "سوپاپ بدنه (مغز گیربکس)", icon: "🧠", desc: "در گیربکس اتوماتیک، مسیر روغن را برای تعویض دنده کنترل می‌کند.", issues: ["گرفتگی مجاری روغن", "خرابی سولنوئیدها"], score: 6 },
     { id: "torque_converter", name: "مبدل گشتاور (کلاچ اتوماتیک)", icon: "🌀", desc: "انتقال نیرو به صورت هیدرولیکی در گیربکس اتوماتیک.", issues: ["داغ شدن روغن", "لرزش در دور آرام"], score: 6 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "میله‌ها و چنگال‌های تعویض دنده.", issues: ["لقی اهرم دنده"], score: 6 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت دریافت قدرت از موتور.", issues: ["نشتی کاسه‌نمد"], score: 7 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "توزیع گشتاور بین چرخ‌های جلو.", issues: ["نشتی روغن", "صدای زوزه"], score: 7 }
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "میله‌ها و چنگال‌های تعویض دنده.", issues: ["لقی اهرم دنده"], score: 6 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت دریافت قدرت از موتور.", issues: ["نشتی کاسه‌نمد"], score: 7 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "توزیع گشتاور بین چرخ‌های جلو.", issues: ["نشتی روغن", "صدای زوزه"], score: 7 }
   ]
 },
     { 
@@ -2252,15 +2252,15 @@ const CARS = [
       ], 
        score: 7,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های تقویت‌شده برای نسخه‌های توربو.", issues: ["سایش رینگ‌ها", "روغن‌سوزی"], score: 7 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی آهنگری شده.", issues: ["فرسودگی یاتاقان‌ها"], score: 8 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ با تکنولوژی VVT.", issues: ["ترک خوردگی", "خرابی solenoid VVT"], score: 7 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر MLS بسیار مقاوم.", issues: ["نشتی در فشار بالا"], score: 7 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "۱۶ سوپاپ سبک.", issues: ["صدای تایپت", "سوختن در اثر بنزین نامناسب"], score: 7 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "دو میل‌سوپاپ با پولی متغیر (VVT).", issues: ["خرابی پولی متغیر", "سایش بادامک"], score: 7 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "شاتون‌های سبک و مقاوم.", issues: ["شکستگی در اثر احتراق زودرس"], score: 8 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "فلایویل دوجرمه.", issues: ["سایش دنده استارت", "لرزش"], score: 7 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب با بدنه پلاستیکی/فلزی.", issues: ["نشتی آب", "خرابی بلبرینگ"], score: 7 },
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های تقویت‌شده برای نسخه‌های توربو.", issues: ["سایش رینگ‌ها", "روغن‌سوزی"], score: 7 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی آهنگری شده.", issues: ["فرسودگی یاتاقان‌ها"], score: 8 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ با تکنولوژی VVT.", issues: ["ترک خوردگی", "خرابی solenoid VVT"], score: 7 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر MLS بسیار مقاوم.", issues: ["نشتی در فشار بالا"], score: 7 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "۱۶ سوپاپ سبک.", issues: ["صدای تایپت", "سوختن در اثر بنزین نامناسب"], score: 7 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "دو میل‌سوپاپ با پولی متغیر (VVT).", issues: ["خرابی پولی متغیر", "سایش بادامک"], score: 7 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "شاتون‌های سبک و مقاوم.", issues: ["شکستگی در اثر احتراق زودرس"], score: 8 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "فلایویل دوجرمه.", issues: ["سایش دنده استارت", "لرزش"], score: 7 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب با بدنه پلاستیکی/فلزی.", issues: ["نشتی آب", "خرابی بلبرینگ"], score: 7 },
     { id: "turbo", name: "توربوشارژر (در نسخه توربو)", icon: "🌀", desc: "توربین گازهای خروجی برای افزایش قدرت.", issues: ["تأخیر توربو", "خرابی وِیس‌گیت", "روغن‌سوزی"], score: 7 }
   ]
 },
@@ -2277,13 +2277,13 @@ const CARS = [
       ], 
       score: 8,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های سیاره‌ای با آلیاژ مقاوم.", issues: ["سایش دنده‌ها"], score: 8 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "سینکروهای کربنی (در نسخه دستی).", issues: ["سختی دنده"], score: 7 },
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های سیاره‌ای با آلیاژ مقاوم.", issues: ["سایش دنده‌ها"], score: 8 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "سینکروهای کربنی (در نسخه دستی).", issues: ["سختی دنده"], score: 7 },
     { id: "valve_body", name: "سوپاپ بدنه", icon: "🧠", desc: "کنترل هیدرولیکی تعویض دنده.", issues: ["خرابی سولنوئید", "تأخیر در تعویض"], score: 7 },
     { id: "torque_converter", name: "مبدل گشتاور", icon: "🌀", desc: "انتقال نرم قدرت.", issues: ["داغ شدن روغن"], score: 8 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض دنده.", issues: ["لقی اهرم"], score: 7 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی گیربکس.", issues: ["نشتی روغن"], score: 8 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل یکپارچه.", issues: ["نشتی روغن"], score: 8 }
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض دنده.", issues: ["لقی اهرم"], score: 7 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی گیربکس.", issues: ["نشتی روغن"], score: 8 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل یکپارچه.", issues: ["نشتی روغن"], score: 8 }
   ]
 },
     { 
@@ -2484,16 +2484,16 @@ const CARS = [
       ], 
         score: 6,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آلومینیومی (بسته به نوع موتور TU5 یا XU7).", issues: ["سایش رینگ‌ها", "روغن‌سوزی در کیلومتر بالا"], score: 6 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی یا چدنی.", issues: ["فرسودگی یاتاقان‌ها", "لرزش"], score: 6 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ یا ۱۶ سوپاپ.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 6 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر آب‌بندی سرسیلندر.", issues: ["سوختن واشر", "نشتی آب"], score: 5 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت", "سوختن سوپاپ"], score: 6 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ.", issues: ["سایش بادامک", "خرابی تسمه تایم"], score: 6 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر ضربه"], score: 6 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار.", issues: ["سایش دنده استارت"], score: 6 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی آب", "صدا دادن"], score: 6 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 6 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آلومینیومی (بسته به نوع موتور TU5 یا XU7).", issues: ["سایش رینگ‌ها", "روغن‌سوزی در کیلومتر بالا"], score: 6 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی یا چدنی.", issues: ["فرسودگی یاتاقان‌ها", "لرزش"], score: 6 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ یا ۱۶ سوپاپ.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 6 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر آب‌بندی سرسیلندر.", issues: ["سوختن واشر", "نشتی آب"], score: 5 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های ورودی و خروجی.", issues: ["صدای تایپت", "سوختن سوپاپ"], score: 6 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ.", issues: ["سایش بادامک", "خرابی تسمه تایم"], score: 6 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "اتصال پیستون به میل‌لنگ.", issues: ["شکستگی در اثر ضربه"], score: 6 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "چرخ طیار.", issues: ["سایش دنده استارت"], score: 6 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی آب", "صدا دادن"], score: 6 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار روغن"], score: 6 }
   ]
 },
     { 
@@ -2509,12 +2509,12 @@ const CARS = [
       ], 
        score: 5,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی.", issues: ["سایش دنده", "خِرخِر"], score: 5 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی تعویض دنده"], score: 5 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض دنده.", issues: ["لقی دسته دنده"], score: 5 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدای زوزه"], score: 6 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 6 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 6 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی.", issues: ["سایش دنده", "خِرخِر"], score: 5 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی تعویض دنده"], score: 5 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض دنده.", issues: ["لقی دسته دنده"], score: 5 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدای زوزه"], score: 6 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 6 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 6 }
   ]
 },
     { 
@@ -2713,15 +2713,15 @@ const CARS = [
       ], 
         score: 7,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های طراحی‌شده برای پاشش مستقیم (GDI).", issues: ["رسوب کربن روی پیستون", "سایش رینگ‌ها"], score: 7 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ سبک و مقاوم.", issues: ["فرسودگی یاتاقان"], score: 7 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ با تکنولوژی VVT.", issues: ["خرابی solenoid VVT", "ترک خوردگی"], score: 7 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر MLS مقاوم.", issues: ["نشتی آب"], score: 7 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های سبک.", issues: ["سوختن سوپاپ", "صدای تایپت"], score: 7 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ DOHC.", issues: ["سایش بادامک"], score: 8 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "شاتون آهنگری شده.", issues: ["شکستگی در فشار بالا"], score: 8 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "فلایویل دوجرمه.", issues: ["لرزش", "سایش دنده استارت"], score: 7 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی", "خرابی بلبرینگ"], score: 7 },
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های طراحی‌شده برای پاشش مستقیم (GDI).", issues: ["رسوب کربن روی پیستون", "سایش رینگ‌ها"], score: 7 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ سبک و مقاوم.", issues: ["فرسودگی یاتاقان"], score: 7 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ با تکنولوژی VVT.", issues: ["خرابی solenoid VVT", "ترک خوردگی"], score: 7 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر MLS مقاوم.", issues: ["نشتی آب"], score: 7 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌های سبک.", issues: ["سوختن سوپاپ", "صدای تایپت"], score: 7 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ DOHC.", issues: ["سایش بادامک"], score: 8 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "شاتون آهنگری شده.", issues: ["شکستگی در فشار بالا"], score: 8 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "فلایویل دوجرمه.", issues: ["لرزش", "سایش دنده استارت"], score: 7 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی", "خرابی بلبرینگ"], score: 7 },
     { id: "turbo", name: "توربوشارژر", icon: "🌀", desc: "توربوشارژر برای نسخه‌های توربو.", issues: ["تأخیر توربو", "خرابی وِیس‌گیت"], score: 7 }
   ]
 },
@@ -2740,11 +2740,11 @@ const CARS = [
   subParts: [
     { id: "pulley_cvt", name: "پولی و تسمه (CVT)", icon: "🎡", desc: "سیستم پولی و تسمه فولادی برای تعویض دنده بی‌نهایت.", issues: ["سایش تسمه فولادی", "سر خوردن تسمه"], score: 6 },
     { id: "valve_body", name: "سوپاپ بدنه", icon: "🧠", desc: "کنترل فشار روغن در CVT.", issues: ["خرابی سولنوئید", "تأخیر"], score: 7 },
-    { id: "gears", name: "چرخ‌دنده‌ها (دستی)", icon: "⚙️", desc: "در نسخه دستی، چرخ‌دنده‌های سنتی.", issues: ["خِرخِر"], score: 7 },
-    { id: "synchro", name: "سینکرو (دستی)", icon: "🔄", desc: "در نسخه دستی.", issues: ["سختی دنده"], score: 6 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض.", issues: ["لقی"], score: 7 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 8 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 8 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها (دستی)", icon: "⚙️", desc: "در نسخه دستی، چرخ‌دنده‌های سنتی.", issues: ["خِرخِر"], score: 7 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو (دستی)", icon: "🔄", desc: "در نسخه دستی.", issues: ["سختی دنده"], score: 6 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض.", issues: ["لقی"], score: 7 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 8 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 8 }
   ]
 },
     { 
@@ -2945,16 +2945,16 @@ const CARS = [
       ], 
        score: 6,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آلومینیومی.", issues: ["سایش رینگ", "روغن‌سوزی"], score: 6 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی.", issues: ["فرسودگی یاتاقان"], score: 6 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی"], score: 6 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر استاندارد.", issues: ["سوختن واشر"], score: 5 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌ها.", issues: ["صدای تایپت"], score: 6 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ (SOHC).", issues: ["سایش بادامک"], score: 6 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 6 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش دنده استارت"], score: 6 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی آب"], score: 6 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار"], score: 6 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های آلومینیومی.", issues: ["سایش رینگ", "روغن‌سوزی"], score: 6 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی.", issues: ["فرسودگی یاتاقان"], score: 6 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی"], score: 6 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر استاندارد.", issues: ["سوختن واشر"], score: 5 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌ها.", issues: ["صدای تایپت"], score: 6 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ (SOHC).", issues: ["سایش بادامک"], score: 6 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 6 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش دنده استارت"], score: 6 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی آب"], score: 6 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار"], score: 6 }
   ]
 },
     { 
@@ -2970,12 +2970,12 @@ const CARS = [
       ], 
        score: 5,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی.", issues: ["سایش دنده"], score: 5 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی دنده ۲"], score: 5 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض.", issues: ["لقی دسته دنده"], score: 5 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدای زوزه"], score: 6 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 6 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 6 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی.", issues: ["سایش دنده"], score: 5 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی دنده ۲"], score: 5 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض.", issues: ["لقی دسته دنده"], score: 5 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدای زوزه"], score: 6 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 6 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 6 }
   ]
 },
     { 
@@ -3163,28 +3163,28 @@ const CARS = [
        image: "images/engine.png",
        x: 50, y: 50, desc: "پیشرانه ۱.۴ لیتری TU3 با ۸ سوپاپ (SOHC). این موتور ساده و مستحکم، توانی معادل ۷۵ اسب بخار تولید می‌کند. سیستم سوخت‌رسانی آن انژکتوری تک‌نقطه‌ای (در مدل‌های اولیه) یا چندنقطه‌ای است. برای رانندگی درون‌شهری مناسب است اما در سربالایی‌ها با کمبود قدرت مواجه می‌شود.", issues: ["شتاب پایین و کمبود قدرت در سربالایی", "مشکل واشر سرسیلندر در کیلومتر بالا", "صدای تایپت سوپاپ‌ها", "روغن‌سوزی در نمونه‌های فرسوده"],   score: 6,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سبک موتور TU3.", issues: ["سایش رینگ", "روغن‌سوزی"], score: 6 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی.", issues: ["فرسودگی یاتاقان"], score: 6 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 6 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر استاندارد.", issues: ["سوختن واشر", "نشتی آب"], score: 5 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌ها.", issues: ["صدای تایپت"], score: 6 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ (SOHC).", issues: ["سایش بادامک"], score: 6 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 6 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش دنده استارت"], score: 6 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی آب"], score: 6 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار"], score: 6 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سبک موتور TU3.", issues: ["سایش رینگ", "روغن‌سوزی"], score: 6 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ فولادی.", issues: ["فرسودگی یاتاقان"], score: 6 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی", "تاب برداشتن"], score: 6 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر استاندارد.", issues: ["سوختن واشر", "نشتی آب"], score: 5 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌ها.", issues: ["صدای تایپت"], score: 6 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ (SOHC).", issues: ["سایش بادامک"], score: 6 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 6 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش دنده استارت"], score: 6 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی آب"], score: 6 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار"], score: 6 }
   ]
 },
       { id: "gearbox", name: "گیربکس", icon: "🔧",
        image: "images/gearbox.png",
        x: 35, y: 65, desc: "گیربکس ۵ سرعته دستی (BE3). نسبت دنده‌های آن برای هماهنگی با موتور کم‌توان ۱.۴ لیتری تنظیم شده است تا شتاب اولیه‌ی قابل قبولی ارائه دهد.", issues: ["تعویض دنده‌ی خشن در دنده ۲", "نشتی روغن از کاسه‌نمدها", "لقی اهرم دنده", "سایش کلاچ"],   score: 6,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی.", issues: ["سایش دنده"], score: 6 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی دنده ۲"], score: 6 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض.", issues: ["لقی دسته دنده"], score: 6 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدای زوزه"], score: 6 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 6 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 6 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌های فولادی.", issues: ["سایش دنده"], score: 6 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "حلقه‌های سینکرو.", issues: ["سختی دنده ۲"], score: 6 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم تعویض.", issues: ["لقی دسته دنده"], score: 6 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدای زوزه"], score: 6 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 6 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 6 }
   ]
 },
       { id: "battery", name: "باتری", icon: "🔋",
@@ -3247,28 +3247,28 @@ const CARS = [
        image: "images/engine.png",
        x: 50, y: 50, desc: "پیشرانه ۱.۸ لیتری XU7 با ۸ سوپاپ. این موتور در روآ معمولاً از نوع کاربراتوری (در مدل‌های قدیمی) یا انژکتوری (در مدل‌های جدیدتر) است. با وجود حجم بالا، توان تولیدی آن محدود است و طراحی آن به دهه ۸۰ برمی‌گردد.", issues: ["مصرف سوخت بسیار بالا", "نشتی روغن از موتور", "صدای تایپت", "کمبود قطعات یدکی اصلی"],   score: 5,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سنگین.", issues: ["روغن‌سوزی شدید", "سایش رینگ"], score: 5 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ چدنی.", issues: ["کوبیدن موتور"], score: 5 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی"], score: 5 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر.", issues: ["سوختن واشر", "نشتی آب"], score: 4 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌ها.", issues: ["صدای تایپت"], score: 5 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ.", issues: ["سایش بادامک"], score: 5 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 5 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش دنده استارت"], score: 5 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی آب"], score: 4 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار"], score: 5 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سنگین.", issues: ["روغن‌سوزی شدید", "سایش رینگ"], score: 5 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ چدنی.", issues: ["کوبیدن موتور"], score: 5 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۸ سوپاپ.", issues: ["ترک خوردگی"], score: 5 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر سرسیلندر.", issues: ["سوختن واشر", "نشتی آب"], score: 4 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ‌ها.", issues: ["صدای تایپت"], score: 5 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ.", issues: ["سایش بادامک"], score: 5 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 5 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش دنده استارت"], score: 5 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "پمپ آب.", issues: ["نشتی آب"], score: 4 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "پمپ روغن.", issues: ["افت فشار"], score: 5 }
   ]
 },
       { id: "gearbox", name: "گیربکس", icon: "🔧",
        image: "images/gearbox.png",
        x: 35, y: 65, desc: "گیربکس ۵ سرعته دستی (BE3). ساختار ساده و مقاوم، اما تعویض دنده‌ها در هوای سرد سخت می‌شود.", issues: ["سنگینی کلاچ", "خرابی کاسه‌نمد", "لقی دنده"],   score: 5,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌ها.", issues: ["سایش دنده"], score: 5 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "سینکرو.", issues: ["سختی دنده"], score: 5 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم.", issues: ["لقی"], score: 5 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدا"], score: 5 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 5 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 5 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌ها.", issues: ["سایش دنده"], score: 5 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "سینکرو.", issues: ["سختی دنده"], score: 5 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم.", issues: ["لقی"], score: 5 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدا"], score: 5 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی روغن"], score: 5 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی روغن"], score: 5 }
   ]
 },
       { id: "battery", name: "باتری", icon: "🔋",
@@ -3331,28 +3331,28 @@ const CARS = [
        image: "images/engine.png",
        x: 50, y: 50, desc: "پیشرانه ۱.۸ لیتری XU7 انژکتوری. مشترک با ۴۰۵ و پارس. موتوری با گشتاور خوب اما طراحی قدیمی که مصرف سوخت بالایی دارد.", issues: ["مصرف بنزین بالا", "صدای تایپت", "نشتی روغن"],   score: 5,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌ها.", issues: ["روغن‌سوزی"], score: 5 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ.", issues: ["کوبیدن موتور"], score: 5 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر.", issues: ["ترک خوردگی"], score: 5 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر.", issues: ["سوختن"], score: 4 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ.", issues: ["تایپت"], score: 5 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ.", issues: ["سایش"], score: 5 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 5 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش"], score: 5 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "واترپمپ.", issues: ["نشتی"], score: 5 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "اویل پمپ.", issues: ["افت فشار"], score: 5 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌ها.", issues: ["روغن‌سوزی"], score: 5 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ.", issues: ["کوبیدن موتور"], score: 5 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر.", issues: ["ترک خوردگی"], score: 5 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر.", issues: ["سوختن"], score: 4 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ.", issues: ["تایپت"], score: 5 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ.", issues: ["سایش"], score: 5 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 5 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش"], score: 5 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "واترپمپ.", issues: ["نشتی"], score: 5 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "اویل پمپ.", issues: ["افت فشار"], score: 5 }
   ]
 },
       { id: "gearbox", name: "گیربکس", icon: "🔧",
        image: "images/gearbox.png",
        x: 35, y: 65, desc: "گیربکس ۵ سرعته دستی (BE3). مقاوم و ساده.", issues: ["سختی دنده", "نشتی روغن"],   score: 5,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌ها.", issues: ["سایش"], score: 5 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "سینکرو.", issues: ["سختی دنده"], score: 5 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم.", issues: ["لقی"], score: 5 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدا"], score: 5 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی"], score: 5 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی"], score: 5 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌ها.", issues: ["سایش"], score: 5 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "سینکرو.", issues: ["سختی دنده"], score: 5 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم.", issues: ["لقی"], score: 5 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدا"], score: 5 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی"], score: 5 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی"], score: 5 }
   ]
 },
       { id: "battery", name: "باتری", icon: "🔋",
@@ -3415,28 +3415,28 @@ const CARS = [
        image: "images/engine.png",
        x: 50, y: 50, desc: "موتور ۱.۶ لیتری TU5 با ۱۶ سوپاپ. شتاب و کشش بهتر نسبت به مدل XU7 و مصرف سوخت پایین‌تر. تکنولوژی جدیدتر و آلایندگی کمتر (یورو ۴).", issues: ["روغن‌سوزی در کیلومتر بالا", "حساسیت سنسورها", "خرابی کویل‌ها"],   score: 7,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سبک.", issues: ["روغن‌سوزی"], score: 7 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ.", issues: ["یاتاقان"], score: 7 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ.", issues: ["ترک"], score: 7 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر MLS.", issues: ["نشتی"], score: 6 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "۱۶ سوپاپ.", issues: ["تایپت"], score: 7 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ DOHC.", issues: ["سایش"], score: 7 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 7 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش"], score: 7 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "واترپمپ.", issues: ["نشتی"], score: 7 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "اویل پمپ.", issues: ["افت فشار"], score: 7 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌های سبک.", issues: ["روغن‌سوزی"], score: 7 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ.", issues: ["یاتاقان"], score: 7 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر ۱۶ سوپاپ.", issues: ["ترک"], score: 7 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر MLS.", issues: ["نشتی"], score: 6 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "۱۶ سوپاپ.", issues: ["تایپت"], score: 7 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ DOHC.", issues: ["سایش"], score: 7 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 7 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش"], score: 7 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "واترپمپ.", issues: ["نشتی"], score: 7 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "اویل پمپ.", issues: ["افت فشار"], score: 7 }
   ]
 },
       { id: "gearbox", name: "گیربکس", icon: "🔧",
        image: "images/gearbox.png",
        x: 35, y: 65, desc: "گیربکس ۵ سرعته دستی (BE4). تعویض دنده نرم‌تر از مدل‌های XU7.", issues: ["تعویض دنده خشن", "نشتی روغن"],   score: 6,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌ها.", issues: ["سایش"], score: 6 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "سینکرو.", issues: ["سختی دنده"], score: 6 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم.", issues: ["لقی"], score: 6 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدا"], score: 6 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی"], score: 7 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی"], score: 7 }
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌ها.", issues: ["سایش"], score: 6 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "سینکرو.", issues: ["سختی دنده"], score: 6 },
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم.", issues: ["لقی"], score: 6 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدا"], score: 6 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی"], score: 7 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی"], score: 7 }
   ]
 },
       { id: "battery", name: "باتری", icon: "🔋",
@@ -3499,29 +3499,29 @@ const CARS = [
        image: "images/engine.png",
        x: 50, y: 50, desc: "موتور ۱.۸ لیتری XU7. صدای بم و قدرتمند اما با مصرف سوخت بالاتر. گشتاور خوب در دورهای پایین.", issues: ["مصرف بنزین بالا", "نشتی روغن", "صدای تایپت"],   score: 6,
   subParts: [
-    { id: "piston", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌ها.", issues: ["روغن‌سوزی"], score: 6 },
-    { id: "crankshaft", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ.", issues: ["یاتاقان"], score: 6 },
-    { id: "cylinder_head", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر.", issues: ["ترک"], score: 6 },
-    { id: "head_gasket", name: "واشر سرسیلندر", icon: "📄", desc: "واشر.", issues: ["سوختن"], score: 5 },
-    { id: "valves", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ.", issues: ["تایپت"], score: 6 },
-    { id: "camshaft", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ.", issues: ["سایش"], score: 6 },
-    { id: "conrod", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 6 },
-    { id: "flywheel", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش"], score: 6 },
-    { id: "water_pump", name: "واترپمپ", icon: "💧", desc: "واترپمپ.", issues: ["نشتی"], score: 6 },
-    { id: "oil_pump", name: "اویل پمپ", icon: "🛢️", desc: "اویل پمپ.", issues: ["افت فشار"], score: 6 }
+    { id: "piston", image: "images/piston.png", name: "پیستون و رینگ", icon: "🔘", desc: "پیستون‌ها.", issues: ["روغن‌سوزی"], score: 6 },
+    { id: "crankshaft", image: "images/crankshaft.png", name: "میل‌لنگ", icon: "〰️", desc: "میل‌لنگ.", issues: ["یاتاقان"], score: 6 },
+    { id: "cylinder_head", image: "images/cylinder-head.png", name: "سرسیلندر", icon: "🧱", desc: "سرسیلندر.", issues: ["ترک"], score: 6 },
+    { id: "head_gasket", image:  "images/Head_Gasket.png", name: "واشر سرسیلندر", icon: "📄", desc: "واشر.", issues: ["سوختن"], score: 5 },
+    { id: "valves", image: "images/valves.png", name: "سوپاپ‌ها", icon: "🎛️", desc: "سوپاپ.", issues: ["تایپت"], score: 6 },
+    { id: "camshaft", image: "images/camshaft.png", name: "میل‌سوپاپ", icon: "🪝", desc: "میل‌سوپاپ.", issues: ["سایش"], score: 6 },
+    { id: "conrod", image: "images/conrod.png", name: "شاتون", icon: "🦴", desc: "شاتون.", issues: ["شکستگی"], score: 6 },
+    { id: "flywheel", imag: "images/flywheel.png", name: "فلایویل", icon: "⚙️", desc: "فلایویل.", issues: ["سایش"], score: 6 },
+    { id: "water_pump", image: "images/water-pump.png", name: "واترپمپ", icon: "💧", desc: "واترپمپ.", issues: ["نشتی"], score: 6 },
+    { id: "oil_pump", image: "images/oil-pump.png", name: "اویل پمپ", icon: "🛢️", desc: "اویل پمپ.", issues: ["افت فشار"], score: 6 }
   ]
 },
       { id: "gearbox", name: "گیربکس", icon: "🔧",
        image: "images/gearbox.png",
        x: 35, y: 65, desc: "گیربکس ۵ سرعته دستی یا ۴ سرعته اتوماتیک (تیپترونیک).", issues: ["تعویض خشن دنده اتوماتیک", "سنگینی کلاچ"],  score: 6,
   subParts: [
-    { id: "gears", name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌ها.", issues: ["سایش"], score: 6 },
-    { id: "synchro", name: "سینکرو", icon: "🔄", desc: "سینکرو.", issues: ["سختی دنده"], score: 6 },
+    { id: "gears",  image: "images/gears.png",  name: "چرخ‌دنده‌ها", icon: "⚙️", desc: "چرخ‌دنده‌ها.", issues: ["سایش"], score: 6 },
+    { id: "synchro", image: "images/synchro.png",  name: "سینکرو", icon: "🔄", desc: "سینکرو.", issues: ["سختی دنده"], score: 6 },
     { id: "valve_body", name: "سوپاپ بدنه", icon: "🧠", desc: "کنترل هیدرولیک (در اتوماتیک).", issues: ["خرابی"], score: 5 },
-    { id: "shift_forks", name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم.", issues: ["لقی"], score: 6 },
-    { id: "bearings", name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدا"], score: 6 },
-    { id: "input_shaft", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی"], score: 6 },
-    { id: "diff", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی"], score: 6 }
+    { id: "shift_forks", image: "images/shift-fork.png",  name: "مکانیزم تعویض", icon: "🕹️", desc: "مکانیزم.", issues: ["لقی"], score: 6 },
+    { id: "bearings", image: "images/ball-bearing.png",  name: "بلبرینگ‌ها", icon: "⭕️", desc: "بلبرینگ‌ها.", issues: ["صدا"], score: 6 },
+    { id: "input_shaft", image: "images/input-shaft.png", name: "شافت ورودی", icon: "➖", desc: "شافت ورودی.", issues: ["نشتی"], score: 6 },
+    { id: "diff", image: "images/diff.png", name: "دیفرانسیل", icon: "🎡", desc: "دیفرانسیل.", issues: ["نشتی"], score: 6 }
   ]
 },
       { id: "battery", name: "باتری", icon: "🔋",
